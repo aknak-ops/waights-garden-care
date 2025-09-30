@@ -203,15 +203,10 @@
         <div>
           <h2>About</h2>
           <p>Hi, I’m Alex. I keep garden care simple: reliable tidy-ups and clear pricing. I work flexibly around uni and message you with available slots before each visit.</p>
-    <div class="badges">
-      <span class="badge">✔ Local student</span>
-      <span class="badge">✔ Reliable</span>
-      <!-- Add more like “Insured” later -->
-    </div>
           <p>No faff or upsell — just the basics done well: weeding, mowing (your mower), light clears and tidy-downs.</p>
         </div>
         <figure class="img-card">
-          <img src="assets/images/garden1.jpg" loading="lazy" alt="Freshly weeded flowerbed with tidy edges">
+          <img src="assets/images/garden1.jpg" loading="lazy" alt="Neat flowerbed and tidy patio after a refresh">
         </figure>
       </div>
     </section>
@@ -274,7 +269,7 @@
         <a href="mailto:waightsgardencare@gmail.com">Email Us</a>
         <a href="https://wa.me/447353738448">WhatsApp Us</a>
       </div>
-      <p class="small">© 2025 Waights Garden Care — Canterbury · <a href="privacy.html">Privacy</a></p>
+      <p class="small">© 2025 Waights Garden Care — Canterbury</p>
     </div>
   </footer>
 
@@ -292,12 +287,6 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
 
 
 

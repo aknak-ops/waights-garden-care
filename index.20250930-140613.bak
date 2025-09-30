@@ -68,7 +68,6 @@
                         <div class="cta">
           <a class="btn primary" href="#services">See prices</a>
           <a class="btn" href="#book">Book a visit</a>
-          <a class="btn outline" href="mailto:waightsgardencare@gmail.com?subject=Estimate%20request%20%E2%80%94%20Waights%20Garden%20Care&body=Hi%20Alex%2C%0A%0AI%E2%80%99d%20like%20an%20estimate.%0A%0AName%3A%0AAddress%20%28with%20postcode%29%3A%0ABundle%3A%20Quick%20Refresh%20%2F%20Garden%20Tidy%20%2F%20Seasonal%20Reset%0ALawn%20mower%20available%3A%20Yes%2FNo%0AGarden%20condition%20%28brief%29%3A%0APreferred%20days%2Ftimes%3A%0A%0AThanks%21">Request estimate</a>
         </div>
         <ul class="trust">
           <li>Clear, fixed prices</li>
@@ -77,54 +76,9 @@
         </ul>
       </div>
     </section>
-    <!-- HOW IT WORKS -->
-    <section id="how" class="section tint sep-top">
-      <div class="wrap">
-        <h2>How it works</h2>
-        <div class="how-grid">
-          <div class="how-step">
-            <img src="assets/images/ic-chat.svg" alt="" aria-hidden="true">
-            <h3>1) Message me</h3>
-            <p>WhatsApp or email with your address, bundle, and any notes (e.g. mower available).</p>
-          </div>
-          <div class="how-step">
-            <img src="assets/images/ic-calendar.svg" alt="" aria-hidden="true">
-            <h3>2) Pick a slot</h3>
-            <p>I’ll reply with available times — you choose what suits you. No long-term contract.</p>
-          </div>
-          <div class="how-step">
-            <img src="assets/images/ic-sparkle.svg" alt="" aria-hidden="true">
-            <h3>3) Tidy & done</h3>
-            <p>I do the basics well: weeding, mowing (your mower), sweep & bag waste for council.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- SERVICES -->
-    <!-- HOW IT WORKS -->
-    <section id="how" class="section tint sep-top">
-      <div class="wrap">
-        <h2>How it works</h2>
-        <div class="how-grid">
-          <div class="how-step">
-            <img src="assets/images/ic-chat.svg" alt="" aria-hidden="true">
-            <h3>1) Message me</h3>
-            <p>WhatsApp or email with your address, bundle, and any notes (e.g. mower available).</p>
-          </div>
-          <div class="how-step">
-            <img src="assets/images/ic-calendar.svg" alt="" aria-hidden="true">
-            <h3>2) Pick a slot</h3>
-            <p>I’ll reply with available times — you choose what suits you. No long-term contract.</p>
-          </div>
-          <div class="how-step">
-            <img src="assets/images/ic-sparkle.svg" alt="" aria-hidden="true">
-            <h3>3) Tidy & done</h3>
-            <p>I do the basics well: weeding, mowing (your mower), sweep & bag waste for council.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<section id="services" class="section">
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
       <div class="wrap">
         <h2>Services & Prices</h2>
         <div class="grid">
@@ -203,15 +157,10 @@
         <div>
           <h2>About</h2>
           <p>Hi, I’m Alex. I keep garden care simple: reliable tidy-ups and clear pricing. I work flexibly around uni and message you with available slots before each visit.</p>
-    <div class="badges">
-      <span class="badge">✔ Local student</span>
-      <span class="badge">✔ Reliable</span>
-      <!-- Add more like “Insured” later -->
-    </div>
           <p>No faff or upsell — just the basics done well: weeding, mowing (your mower), light clears and tidy-downs.</p>
         </div>
         <figure class="img-card">
-          <img src="assets/images/garden1.jpg" loading="lazy" alt="Freshly weeded flowerbed with tidy edges">
+          <img src="assets/images/garden1.jpg" loading="lazy" alt="Neat flowerbed and tidy patio after a refresh">
         </figure>
       </div>
     </section>
@@ -236,7 +185,6 @@
         <p>Message me directly or send a quick email request.</p>
         <div class="contact-buttons">
           <a class="btn whats" href="https://wa.me/447353738448" target="_blank" rel="noopener">WhatsApp: 07353&nbsp;738448</a>
-          <a class="btn outline" href="mailto:waightsgardencare@gmail.com?subject=Estimate%20request%20%E2%80%94%20Waights%20Garden%20Care&body=Hi%20Alex%2C%0A%0AI%E2%80%99d%20like%20an%20estimate.%0A%0AName%3A%0AAddress%20%28with%20postcode%29%3A%0ABundle%3A%20Quick%20Refresh%20%2F%20Garden%20Tidy%20%2F%20Seasonal%20Reset%0ALawn%20mower%20available%3A%20Yes%2FNo%0AGarden%20condition%20%28brief%29%3A%0APreferred%20days%2Ftimes%3A%0A%0AThanks%21">Request estimate</a>
           <a class="btn email" href="mailto:waightsgardencare@gmail.com">Email: waightsgardencare@gmail.com</a>
         </div>
 
@@ -274,7 +222,7 @@
         <a href="mailto:waightsgardencare@gmail.com">Email Us</a>
         <a href="https://wa.me/447353738448">WhatsApp Us</a>
       </div>
-      <p class="small">© 2025 Waights Garden Care — Canterbury · <a href="privacy.html">Privacy</a></p>
+      <p class="small">© 2025 Waights Garden Care — Canterbury</p>
     </div>
   </footer>
 
@@ -292,14 +240,6 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 
