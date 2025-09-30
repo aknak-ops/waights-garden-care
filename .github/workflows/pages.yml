@@ -15,7 +15,28 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install linters
+        run: npm install -g htmlhint stylelint
+
+      - name: Run HTMLHint
+        run: npx htmlhint "**/*.html" || true
+
+      - name: Run Stylelint
+        run: npx stylelint "**/*.css" || true
+
   deploy:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
