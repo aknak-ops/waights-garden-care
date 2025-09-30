@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alex-waights.github.io/waights-garden-care/sitemap.xml
