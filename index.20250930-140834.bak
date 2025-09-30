@@ -258,20 +258,7 @@
       </div>
     </section>
 
-        <!-- PAYMENTS -->
-    <section id="payments" class="section alt sep-top">
-      <div class="wrap">
-        <h2>Payments</h2>
-        <p>You can pay whichever way is easiest:</p>
-        <ul class="compact">
-          <li>💷 <strong>Cash</strong> — pay on the day after the job is finished.</li>
-          <li>🏦 <strong>Bank transfer</strong> — I’ll provide my account details when booking.</li>
-          <li>💻 <strong>PayPal</strong> — quick and easy, use my link: <a href="https://paypal.me/YOURNAME" target="_blank">paypal.me/YOURNAME</a></li>
-        </ul>
-        <p class="small" style="margin-top:10px">⚠️ Please note: I don’t carry change, so bring the right cash if paying that way.</p>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="wrap contact-box">
         <h2>Contact</h2>
@@ -305,9 +292,6 @@
   </div>
 </body>
 </html>
-
-
-
 
 
 
