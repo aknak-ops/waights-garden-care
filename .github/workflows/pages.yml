@@ -27,13 +27,16 @@ jobs:
           node-version: '20'
 
       - name: Install linters
-        run: npm install -g htmlhint stylelint
+        run: |
+          npm install -g htmlhint stylelint stylelint-config-standard
 
-      - name: Run HTMLHint
-        run: npx htmlhint "**/*.html" || true
+      - name: Run HTMLHint (fail on errors)
+        run: |
+          npx htmlhint "**/*.html"
 
-      - name: Run Stylelint
-        run: npx stylelint "**/*.css" || true
+      - name: Run Stylelint (fail on errors)
+        run: |
+          npx stylelint "**/*.css"
 
   deploy:
     needs: lint
