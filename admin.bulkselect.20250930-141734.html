@@ -80,18 +80,10 @@
           <span class="badge" id="summaryPaid">£0 paid</span>
           <span class="badge" id="summaryUnpaid">£0 unpaid</span>
         </div>
-          <div id="bulkBar" class="bulkbar" style="display:none;margin:8px 0;gap:8px;align-items:center">
-    <span class="small" id="bulkCount">0 selected</span>
-    <button class="btn" id="bulkPaid">Mark selected Paid</button>
-    <button class="btn" id="bulkUnpaid">Mark selected Unpaid</button>
-    <button class="btn danger" id="bulkDelete">Delete selected</button>
-    <span style="flex:1"></span>
-    <button class="btn" id="printToday">Print today\u2019s jobs</button> <button class="btn outline" id="undoBtn" title="Undo last bulk action" disabled>Undo</button>
-  </div>
-
+        <div style="overflow:auto;margin-top:10px">
           <table id="jobsTable">
             <thead>
-              <tr><th><input type="checkbox" id="selAll" title="Select all"></th><th>Date</th><th>Name</th><th>Area</th><th>Bundle</th><th>£</th><th>Pay</th><th>Status</th><th>Actions</th></tr>
+              <tr><th>Date</th><th>Name</th><th>Area</th><th>Bundle</th><th>£</th><th>Pay</th><th>Status</th><th>Actions</th></tr>
             </thead>
             <tbody></tbody>
           </table>
@@ -114,8 +106,6 @@
   <script src="assets/js/admin.js" defer></script>
 </body>
 </html>
-
-
 
 
 
