@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "no-empty-source": null,
+    "color-hex-length": "short",
+    "block-no-empty": true
+  }
+}
