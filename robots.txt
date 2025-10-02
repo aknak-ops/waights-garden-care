@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://icon"" href=""assets/favicon.svg"" type=""image/svg+xml"">" }.github.io/waights-garden-care/sitemap.xml
+
+Sitemap: https://aknak-ops.github.io/waights-garden-care/sitemap.xml
