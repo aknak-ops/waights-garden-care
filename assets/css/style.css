@@ -149,3 +149,8 @@ if (-not (Test-Path "C:\Users\alexw\OneDrive\Documents\Waights garden care\asset
   }
 })();
 
+
+/* GH Pages fixes */
+.how-it-works img, .how-it-works svg { display:inline-block; vertical-align:middle; }
+.how-it-works img[alt=""], .how-it-works img[src=""], .how-it-works img:not([src]) { display:none; }
+.how-it-works .tile, .how-it-works .btn-icon { display:none; } /* hide little boxes from missing icons */
