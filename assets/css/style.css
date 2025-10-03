@@ -268,3 +268,27 @@ ul{ margin-inline-start:1.2rem; }
 hr{ border:0; height:1px; background:#e6ebe7; }
 
 /* =================== END UI POLISH =================== */
+/* === CTA row layout (responsive) === */
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem;
+  align-items:center;
+  margin-top:1rem;
+}
+.hero-actions a,
+.hero-actions .btn,
+.hero-actions button{
+  min-height:44px;
+  line-height:1.1;
+  padding:.8rem 1rem;
+}
+
+/* Stack on small screens */
+@media (max-width: 640px){
+  .hero-actions{ flex-direction:column; align-items:stretch; }
+  .hero-actions a,
+  .hero-actions .btn,
+  .hero-actions button{ width:100%; }
+}
+/* === end CTA row layout === */
