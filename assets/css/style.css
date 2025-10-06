@@ -467,3 +467,57 @@ body::after { right:0; }
 .faq-list summary{ font-weight:700; cursor:pointer }
 .faq-list summary::-webkit-details-marker{ display:none }
 /* ===================================== */
+ 
+/* === Rails (side gutters with leaf pattern) === */
+:root{
+  --rail-w: clamp(16px, 4vw, 56px);
+  --rail-bg: #e9ede7;      /* pale gutter tone */
+  --rail-tint: rgba(0,0,0,.035); /* ultra subtle overlay to help contrast */
+}
+body{
+  background: var(--page, #fbfaf6);
+}
+.rails{
+  position: relative;
+  isolation: isolate;
+}
+.rails::before,
+.rails::after{
+  content:"";
+  position: fixed; /* keeps the rails full-height on long pages */
+  inset: 0 auto 0 0;
+  width: var(--rail-w);
+  background:
+    url("../images/leaf-bg.svg") center top repeat-y,
+    linear-gradient(var(--rail-tint), var(--rail-tint));
+  background-size: 240px auto, auto;
+  background-color: var(--rail-bg);
+  z-index: 0;
+  pointer-events: none;
+}
+.rails::after{
+  inset: 0 0 0 auto;
+}
+/* ensure main content sits above rails */
+main, header, footer, .section{ position: relative; z-index: 1; }
+
+/* Footer polish */
+footer.site-footer{
+  background: linear-gradient(0deg,#eef1ec,#f5f6f3);
+  border-top: 1px solid #dde3dc;
+  padding: 24px 0;
+}
+footer.site-footer .wrap{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer.site-footer nav a{
+  margin-right: 14px;
+  text-decoration: none;
+  color: var(--ink, #223);
+}
+footer.site-footer nav a:hover{ text-decoration: underline; }
+small.copyright{ opacity:.7; }
