@@ -325,3 +325,114 @@ details[open] { background:#fafcf9; }
 .site-footer { padding: 24px 0; border-top:1px solid #e9ecef; background:#fff; }
 .site-footer .mini a { color: #49524c; margin-right: 12px; text-decoration:none; }
 @media (max-width: 720px) { .price-grid { grid-template-columns: 1fr; } .nav { display:none; } }
+
+/* ====== Waights Garden Care: hero & accent image polish (appended) ====== */
+:root{
+  --nav-h: 72px;                /* header height (adjust if your header changes) */
+  --accent-shadow: 0 8px 30px rgba(0,0,0,.12);
+  --accent-radius: 14px;
+}
+
+/* Keep header above and reserve space */
+.site-header{ position: sticky; top: 0; z-index: 1000; }
+main{ padding-top: calc(var(--nav-h) + 8px); }
+
+/* When jumping to sections from the nav, keep titles visible below the sticky header */
+section[id]{ scroll-margin-top: calc(var(--nav-h) + 12px); }
+
+/* --- HERO (top banner) --- */
+.section.hero,
+#home.section.hero{                 /* support either class or id-based hook */
+  background-image:
+    linear-gradient( to bottom, rgba(0,0,0,.25), rgba(0,0,0,.15) ),
+    url("../images/1000013101.jpg");/* your chosen hero */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 46vh;                /* keep it present but not huge */
+  color: #fff;
+}
+.section.hero .wrap{ padding-block: 48px 56px; } /* breathing room for CTA row */
+
+/* Nudge the CTA row so the overlay has enough contrast */
+.section.hero .btn,
+.section.hero .btn.outline{ box-shadow: var(--accent-shadow); }
+
+/* --- DECORATIVE ACCENTS (small “stickers” that don’t dominate) ---
+   These use pseudo-elements so they never interfere with layout or reading order.
+   Adjust URLs below to any of your new images if you prefer.
+*/
+
+/* Accent near Services */
+#services{ position: relative; }
+#services::after{
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: -24px;
+  width: 320px; height: 220px;
+  background: url("../images/1000013096.png") center/cover no-repeat;
+  border-radius: var(--accent-radius);
+  box-shadow: var(--accent-shadow);
+  opacity: .92;
+  pointer-events: none;
+}
+
+/* Accent near Prices */
+#prices, section.prices{ position: relative; }
+#prices::before, section.prices::before{
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: -18px;
+  width: 300px; height: 210px;
+  background: url("../images/1000013097.jpg") center/cover no-repeat;
+  border-radius: var(--accent-radius);
+  box-shadow: var(--accent-shadow);
+  opacity: .95;
+  pointer-events: none;
+}
+
+/* Accent near How-it-works */
+#how, section#how{ position: relative; }
+#how::after{
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 28px;
+  width: 280px; height: 200px;
+  background: url("../images/1000013095.png") center/cover no-repeat;
+  border-radius: var(--accent-radius);
+  box-shadow: var(--accent-shadow);
+  opacity: .95;
+  pointer-events: none;
+}
+
+/* Accent near Contact */
+#contact, section#contact{ position: relative; }
+#contact::before{
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: -10px;
+  width: 260px; height: 190px;
+  background: url("../images/1000013093.jpg") center/cover no-repeat;
+  border-radius: var(--accent-radius);
+  box-shadow: var(--accent-shadow);
+  opacity: .95;
+  pointer-events: none;
+}
+
+/* Keep accents tasteful on small screens */
+@media (max-width: 900px){
+  #services::after{ width: 240px; height: 170px; right: -10px; top: -14px; }
+  #prices::before{  width: 230px; height: 160px; left: -10px; top: -12px; }
+  #how::after{      width: 220px; height: 160px; right: -10px; top: 16px; }
+  #contact::before{ width: 200px; height: 150px; left: -8px;  top: -8px;  }
+}
+@media (max-width: 640px){
+  #services::after,
+  #prices::before,
+  #how::after,
+  #contact::before{ display: none; } /* ultra-compact phones: hide accents */
+}
