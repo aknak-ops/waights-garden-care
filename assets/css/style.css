@@ -25,7 +25,7 @@ h1{font-size:2rem;margin:.2rem 0 .6rem} h2{font-size:1.6rem;margin:0 0 .8rem} h3
 }
 
 /* Hero banner */
-.hero{position:relative;color:#fff;background:url('../images/banner.jpg') center/cover no-repeat;min-height:52vh;display:flex;align-items:center}
+.hero{position:relative;color:#fff;background:url('../images/1000013101.jpg') center/cover no-repeat;min-height:52vh;display:flex;align-items:center}
 .hero::before{content:"";position:absolute;inset:0;background:rgba(31,61,43,.45)}
 .hero .wrap{position:relative;max-width:820px}
 .hero .sub{color:#fff;opacity:.95}
@@ -435,4 +435,30 @@ section[id]{ scroll-margin-top: calc(var(--nav-h) + 12px); }
   #prices::before,
   #how::after,
   #contact::before{ display: none; } /* ultra-compact phones: hide accents */
+}
+
+/* === A. Rails + Hero overrides (added) === */
+:root{
+  --rail-w: clamp(14px, 4vw, 56px);
+  --rail-tint: rgba(0,0,0,.035);
+}
+body::before,
+body::after{
+  content:"";
+  position:fixed; top:0; bottom:0; width:var(--rail-w);
+  background:
+    url('../images/leaf-bg.svg') center top/180px repeat-y,
+    linear-gradient(var(--rail-tint), var(--rail-tint));
+  pointer-events:none; z-index:-1;
+}
+body::before{ left:0; }
+body::after { right:0; }
+
+/* Ensure hero uses the new banner and stays readable */
+.hero{
+  background-image:
+    linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.12)),
+    url('../images/1000013101.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
