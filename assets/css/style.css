@@ -294,3 +294,34 @@ hr{ border:0; height:1px; background:#e6ebe7; }
 /* === end CTA row layout === */
 
 
+ /* === Minimal layout polish === */
+:root {
+  --header-h: 72px;
+  --ink: #1e1e1e;
+  --bg: #fff;
+  --tint: #f4f6f3;
+  --brand: #2f5036;
+  --green: #1f3d2b;
+}
+.site-header { position: sticky; top: 0; z-index: 1000; background: #fff; border-bottom: 1px solid #e9ecef; height: var(--header-h); display: flex; align-items: center; }
+.site-header .wrap { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.brand { font-weight: 700; letter-spacing:.2px; color: var(--brand); }
+.nav a { padding:.6rem .8rem; border-radius:10px; color: var(--ink); text-decoration:none; }
+.nav a:hover { background:#f2f2f2; }
+.section { padding: 56px 0; }
+.section.tint { background: var(--tint); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.hero { padding: 72px 0 48px; background: linear-gradient(0deg,#edf2ee,#dbe5df); }
+.cta-row { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.5rem; }
+.btn { display:inline-flex; align-items:center; justify-content:center; padding:.7rem 1rem; border:1px solid #d0d6d1; border-radius:12px; background:#fff; color:var(--ink); text-decoration:none; }
+.btn.primary { background: var(--green); color:#fff; border-color: var(--green); }
+.price-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px; }
+.price { background:#fff; border:1px solid #e5eae6; border-radius:14px; padding:16px; }
+.price .amount { font-size: 1.6rem; font-weight: 700; margin:.25rem 0 .25rem; color: var(--green); }
+.fine { color:#66706a; font-size:.95rem; margin-top:.75rem; }
+.steps li { margin:.35rem 0; }
+details { border:1px solid #e5eae6; border-radius:12px; padding:.6rem .8rem; margin:.5rem 0; background:#fff; }
+details[open] { background:#fafcf9; }
+.site-footer { padding: 24px 0; border-top:1px solid #e9ecef; background:#fff; }
+.site-footer .mini a { color: #49524c; margin-right: 12px; text-decoration:none; }
+@media (max-width: 720px) { .price-grid { grid-template-columns: 1fr; } .nav { display:none; } }
