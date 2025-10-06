@@ -522,3 +522,8 @@ footer.site-footer nav a{
 footer.site-footer nav a:hover{ text-decoration: underline; }
 small.copyright{ opacity:.7; }
 
+/* === Step F: polish === */
+.hero.hero--sm{ min-height:28vh }
+.card ul{ margin:.5rem 0 0 1rem; padding:0 }
+.card ul li{ margin:.25rem 0; line-height:1.45 }
+.section h2 + p.muted{ color: var(--ink-soft); font-size: .975rem; }
