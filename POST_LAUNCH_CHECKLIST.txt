@@ -1,0 +1,61 @@
+WAIGHTS GARDEN CARE — POST-LAUNCH OPTIMIZATION CHECKLIST
+=========================================================
+
+🔹 1. GOOGLE BUSINESS PROFILE
+   - Go to https://www.google.com/business
+   - Click “Add your business” → choose category “Gardener” or “Garden maintenance service”
+   - Business name: Waights Garden Care
+   - Area served: Canterbury + nearby CT postcodes
+   - Add photos (your logo, gardens, mower, leaf cleanup)
+   - Verify by phone/postcard
+   - Link website: https://aknak-ops.github.io/waights-garden-care
+
+🔹 2. SEARCH CONSOLE + SITEMAP
+   - Go to https://search.google.com/search-console/
+   - Add property: your site URL
+   - Under "Sitemaps", submit:
+        sitemap.xml
+   - Check for “Indexed pages” after a few days
+
+🔹 3. SPEED + MOBILE TEST
+   - Use https://pagespeed.web.dev/
+   - Aim for scores 90+ on mobile and desktop
+   - Suggestions usually revolve around image compression → use TinyPNG or Squoosh if needed
+
+🔹 4. LOCAL SEO POLISH
+   - Add your NAP (Name, Address, Phone) consistently on footer & Google
+   - Example:
+        Waights Garden Care • Canterbury, Kent • 07xxx xxxxxx
+   - Make sure it matches your Google Business entry exactly.
+
+🔹 5. SOCIAL LINKS
+   - Create Facebook Page: facebook.com/WaightsGardenCare
+   - Create Instagram: instagram.com/waightsgardencare
+   - Add these to footer when ready:
+        <li><a href="https://facebook.com/WaightsGardenCare">Facebook</a></li>
+        <li><a href="https://instagram.com/waightsgardencare">Instagram</a></li>
+
+🔹 6. FAVICON & OPEN GRAPH IMAGE
+   - Replace assets/img/og-cover.jpg with a 1200x630 JPG showing your brand
+   - Replace assets/icons/favicon.svg with your logo if you make one
+
+🔹 7. ANALYTICS VERIFY
+   - Visit plausible.io → sign up free
+   - Add site: aknak-ops.github.io/waights-garden-care
+   - Replace YOUR-DOMAIN in Step V tag with that domain
+
+🔹 8. BACKUP / SYNC
+   - Zip your project folder or push to GitHub main branch regularly
+   - Optional backup command:
+        Compress-Archive -Path * -DestinationPath waights_backup.zip -Force
+
+🔹 9. CUSTOMER REVIEWS
+   - Encourage Google reviews → they will appear on your local map listing.
+   - Update your site’s “Reviews” section monthly with fresh quotes.
+
+🔹 10. FUTURE ENHANCEMENTS
+   - Add optional “Seasonal Offers” banner (e.g. Autumn leaf clearance)
+   - Add WhatsApp quick-response template
+   - Enable push notification for returning users (optional later)
+
+=========================================================

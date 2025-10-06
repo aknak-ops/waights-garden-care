@@ -1,0 +1,7 @@
+# Enable text compression
+AddType text/html .html
+AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript
+# Cache static assets for 30 days
+<FilesMatch '\.(css|js|png|svg)$'>
+  Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
