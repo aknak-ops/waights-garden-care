@@ -462,3 +462,8 @@ body::after { right:0; }
   background-size: cover !important;
   background-position: center !important;
 }
+/* ========== Policies helpers ========== */
+.faq-list details{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px 16px; margin:12px 0 }
+.faq-list summary{ font-weight:700; cursor:pointer }
+.faq-list summary::-webkit-details-marker{ display:none }
+/* ===================================== */
