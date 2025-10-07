@@ -698,3 +698,96 @@ html,body{scroll-behavior:smooth;}
 .faq-aside{background:#0f2010;color:#e8f0e8;border:1px solid #234523;border-radius:14px;padding:1.1rem}
 .faq-aside h3{margin:.2rem 0  .4rem}
 .faq-aside .mini{color:#cfe6cf;opacity:.95}
+/* --- centered layout + leaf-pattern gutters --- */
+:root{--page-w:1120px}
+body{background:#f6f8f6 url("../img/leaf-pattern.svg") repeat fixed}
+.container{max-width:var(--page-w);margin:0 auto;padding:0 1rem}
+
+/* ensure sections don’t bleed full-width unless explicitly intended */
+section.container, .container section{max-width:var(--page-w)}
+
+/* white card for hero text so it’s readable on photos */
+.hero .hero-card{background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:1rem 1.25rem;max-width:680px;
+  box-shadow:0 8px 28px rgba(0,0,0,.12)}
+.hero .hero-card h1{margin:.2rem 0 .5rem;color:#1b1b1b}
+.hero .hero-card p{color:#1b1b1b}
+
+/* policies hero small white box too */
+.hero.hero--sm .hero-card{max-width:720px}
+
+/* kill any stray floating images that could overlap cards */
+#floating,.floating,.photo-float,.float-img{display:none!important}
+.service-grid{position:relative;z-index:1}
+
+/* remove mobile CTA bar entirely */
+.cta-bar,.cta-spacer{display:none!important}
+
+/* hide whole reviews section (and any star icons) */
+#reviews{display:none!important}
+
+/* tidy coverage: remove extra CTA space if button removed */
+.coverage .card-cta{display:none}
+
+/* simple email button */
+.lead-links a.email{background:#2f4f2f}
+/* --- centered layout with leaf gutters --- */
+:root{--page-w:1120px}
+body{background:#f6f8f6 url("../img/leaf-pattern.svg") repeat fixed}
+.container{max-width:var(--page-w);margin:0 auto;padding:0 16px}
+
+/* do NOT let sections stretch wider than container */
+section.container, .container section{max-width:var(--page-w);margin-left:auto;margin-right:auto}
+
+/* hero/policies: readable white boxes on top of the photo */
+.hero h1, .hero p:first-of-type{display:inline-block;background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:.8rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,.18);color:#111}
+.hero.hero--sm h1, .hero.hero--sm p:first-of-type{display:inline-block;background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:.6rem .9rem;box-shadow:0 10px 30px rgba(0,0,0,.18);color:#111}
+
+/* services: allow only tiny line icons; hide any other images that could overlay */
+.services img:not(.ico){display:none!important}
+
+/* remove sticky CTA bars anywhere */
+.cta-bar,.cta-spacer{display:none!important}
+
+/* hide reviews section entirely */
+#reviews{display:none!important}
+
+/* coverage CTA off */
+#coverage .card-cta{display:none!important}
+
+/* simple contact buttons */
+.lead-links a.email{background:#2f4f2f;color:#fff}
+/* == ENFORCED PATCH (do not remove) == */
+
+/* Centered layout; sides show subtle leaf pattern */
+:root{--page-w:1120px}
+body{background:#f6f8f6 url("../img/leaf-pattern.svg") repeat fixed}
+.container{max-width:var(--page-w);margin:0 auto;padding:0 16px}
+section.container,.container section{max-width:var(--page-w);margin-left:auto;margin-right:auto}
+
+/* White boxes over hero image text (home + policies) */
+.hero h1,.hero p:first-of-type{
+  display:inline-block;background:#fff;color:#111;border:1px solid #e6e6e6;border-radius:14px;
+  padding:.8rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,.18)
+}
+.hero.hero--sm h1,.hero.hero--sm p:first-of-type{
+  display:inline-block;background:#fff;color:#111;border:1px solid #e6e6e6;border-radius:14px;
+  padding:.6rem .9rem;box-shadow:0 10px 30px rgba(0,0,0,.18)
+}
+
+/* Kill any stray overlay/floating photo */
+img[style*="position:fixed"],img[style*="position:absolute"]{display:none!important}
+.services img:not(.ico){display:none!important}
+
+/* Remove sticky CTA bars */
+.cta-bar,.cta-spacer{display:none!important}
+
+/* Remove Reviews section completely (in case HTML still has it) */
+#reviews{display:none!important}
+
+/* Remove "Check availability" button */
+#coverage .card-cta{display:none!important}
+
+/* Contact buttons */
+.lead-links a.email{background:#2f4f2f;color:#fff}
+
+/* == END PATCH == */

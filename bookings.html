@@ -18,6 +18,26 @@
 <script defer data-domain="aknak-ops.github.io/waights-garden-care" src="https://plausible.io/js/script.js"></script>
 <noscript><img src="https://plausible.io/api/event?p=pageview&n=Pageview" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 <link rel="canonical" href="https://aknak-ops.github.io/waights-garden-care/bookings.html">
+<style id="hotfix"
+  media="all">
+/* centered layout + leaf gutters */
+:root{--page-w:1120px}
+body{background:#f6f8f6 url("assets/img/leaf-pattern.svg") repeat fixed}
+.container{max-width:var(--page-w);margin:0 auto;padding:0 16px}
+section.container,.container section{max-width:var(--page-w);margin-left:auto;margin-right:auto}
+
+/* readable white boxes on hero text (home + policies) */
+.hero h1,.hero p:first-of-type{
+  display:inline-block;background:#fff;color:#111;border:1px solid #e6e6e6;border-radius:14px;
+  padding:.8rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,.18)
+}
+
+/* hide stray overlay images and reviews/availability/insured UI defensively */
+img[style*="position:fixed"],img[style*="position:absolute"]{display:none!important}
+#reviews{display:none!important}
+#coverage .card-cta{display:none!important}
+.badge:has(svg){display:none!important}
+</style>
 </head>
 <body>
 <a class='skip-link' href='#main'>Skip to main content</a>
@@ -43,6 +63,11 @@
 <script defer src="assets/js/metrics.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
 
