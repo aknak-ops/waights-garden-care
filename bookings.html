@@ -63,8 +63,12 @@ img[style*="position:fixed"],img[style*="position:absolute"]{display:none!import
 <script defer src="assets/js/metrics.js"></script>
 
 
+<script>if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister()));}</script>
 </body>
 </html>
+
+
+
 
 
 

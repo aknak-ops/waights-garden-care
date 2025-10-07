@@ -1,1 +1,1 @@
-// intentionally empty; service worker disabled
+// disabled
