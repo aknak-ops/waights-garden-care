@@ -8,3 +8,4 @@
     list.classList.toggle('open');
   });
 })();
+
