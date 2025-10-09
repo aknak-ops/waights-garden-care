@@ -843,3 +843,14 @@ img[style*="position:fixed"],img[style*="position:absolute"]{display:none!import
 /* a11y helpers */
 :focus-visible{outline:3px solid #84c784;outline-offset:3px}
 
+/* == hero/policies readable boxes + tidy layout == */
+:root{--page-w:1120px}
+.container{max-width:var(--page-w);margin:0 auto;padding:0 16px}
+.hero h1,.hero p:first-of-type{
+  display:inline-block;background:#fff;color:#111;border:1px solid #e6e6e6;border-radius:14px;
+  padding:.8rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,.18)
+}
+.hero.hero--sm h1,.hero.hero--sm p:first-of-type{
+  display:inline-block;background:#fff;color:#111;border:1px solid #e6e6e6;border-radius:14px;
+  padding:.6rem .9rem;box-shadow:0 10px 30px rgba(0,0,0,.18)
+}
