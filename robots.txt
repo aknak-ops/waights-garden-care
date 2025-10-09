@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: System.Management.Automation.Internal.Host.InternalHost/sitemap.xml
+
+Sitemap: https://aknak-ops.github.io/waights-garden-care/sitemap.xml
