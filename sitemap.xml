@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aknak-ops.github.io/waights-garden-care/</loc></url>
-  <url><loc>https://aknak-ops.github.io/waights-garden-care/policies.html</loc></url>
+  <url><loc>https://aknak-ops.github.io/waights-garden-care/index.html</loc></url>
+  <url><loc>https://aknak-ops.github.io/waights-garden-care/services.html</loc></url>
+  <url><loc>https://aknak-ops.github.io/waights-garden-care/pricing.html</loc></url>
+  <url><loc>https://aknak-ops.github.io/waights-garden-care/about.html</loc></url>
   <url><loc>https://aknak-ops.github.io/waights-garden-care/contact.html</loc></url>
   <url><loc>https://aknak-ops.github.io/waights-garden-care/privacy.html</loc></url>
+  <url><loc>https://aknak-ops.github.io/waights-garden-care/policies.html</loc></url>
+  <url><loc>https://aknak-ops.github.io/waights-garden-care/404.html</loc></url>
 </urlset>
