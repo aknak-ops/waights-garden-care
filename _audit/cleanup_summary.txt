@@ -1,0 +1,31 @@
+﻿CLEANUP SUMMARY
+===============
+
+Project: C:\Users\alexw\OneDrive\Documents\Waights garden care
+Generated: 2025-11-09 10:38:15
+
+1) Duplicate files by CONTENT (hash): 35
+   -> See: C:\Users\alexw\OneDrive\Documents\Waights garden care\_audit\duplicates_by_hash.csv
+
+2) Duplicate files by NAME (case-insensitive): 46
+   -> See: C:\Users\alexw\OneDrive\Documents\Waights garden care\_audit\duplicates_by_name.csv
+
+3) Suspicious HTML duplicates: 4
+   - index.backup.20251102-131801.html
+   - index.backup.html
+   - assets\favicons\index.backup.20251102-131801.html
+   - assets\favicons\index.backup.html
+
+
+4) POSSIBLY UNUSED assets in assets/**: 27
+   -> See: C:\Users\alexw\OneDrive\Documents\Waights garden care\_audit\unused_assets.csv
+   NOTE: Favicons are treated as referenced if any head contains assets/favicons.
+
+5) Text hits to review (old wording like deposit / hedge trimming): 25
+   -> See: C:\Users\alexw\OneDrive\Documents\Waights garden care\_audit\text_hits.csv
+
+NEXT STEPS
+----------
+- Review the CSVs in _audit/.
+- If you want, put files you want to DELETE into: _audit\delete_list.txt (one relative path per line).
+- Then run the deletion helper below to remove them safely (it skips anything outside the project).

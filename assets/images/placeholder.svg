@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
-  <rect width="100%" height="100%" fill="#e8efe8"/>
-  <path d="M0 540 L240 420 L420 520 L660 360 L900 500 L1200 380 L1200 600 L0 600 Z" fill="#c7d7c7"/>
-  <circle cx="220" cy="220" r="80" fill="#b7c7b7"/>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="28" fill="#56715c">Placeholder image</text>
-</svg>

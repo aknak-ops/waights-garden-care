@@ -1,0 +1,72 @@
+
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\1000013103.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\1000013103.jpg
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\404.html
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\about.html
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\admin.js -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\js\admin.js
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\banner.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\banner.webp -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner.webp
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\banner@2x.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner@2x.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\banner@2x.webp -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner@2x.webp
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ChatGPT Image Nov 2, 2025, 11_17_19 AM.png -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ChatGPT Image Nov 2, 2025, 11_17_19 AM.png
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\contact.html
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\contact.js -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\js\contact.js
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\coverage.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\coverage.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\favicons-head-snippet.html -> C:\Users\alexw\OneDrive\Documents\Waights garden care\favicons-head-snippet.html
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\frame.png -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\frame.png
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ic-broom.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-broom.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ic-chat.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-chat.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ic-leaf.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-leaf.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ic-mower.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-mower.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ic-recycle.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-recycle.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\ic-sparkle.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-sparkle.svg
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\index.html
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\leaf-bg.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\leaf-bg.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\leaf-pattern.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\leaf-pattern.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\logo.png -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\logo.png
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\main.js -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\js\main.js
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\metrics.js -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\js\metrics.js
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\og-cover.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\og-cover.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\og-image.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\og-image.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\perf.js -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\js\perf.js
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\policies.html
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\pricing.html
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\privacy.html
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\qr-homepage.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\qr-homepage.svg
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\README.md
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\robots.txt
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\services.html
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\site.js -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\js\site.js
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\sitemap.xml
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\styles.css
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\favicons\wave-sep.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\wave-sep.svg
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\apple-touch-icon.png
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\favicon.ico
+DEL:  C:\Users\alexw\OneDrive\Documents\Waights garden care\manifest.webmanifest
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\1000013103.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\1000013103.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\banner.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\banner.webp -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner.webp
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\banner@2x.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner@2x.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\banner@2x.webp -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\banner@2x.webp
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\ic-chat.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-chat.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\ic-sparkle.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ic-sparkle.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\leaf-bg.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\leaf-bg.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\og-image.jpg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\og-image.jpg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\images\wave-sep.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\wave-sep.svg
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\icons\ChatGPT Image Nov 2, 2025, 11_17_19 AM.png -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\ChatGPT Image Nov 2, 2025, 11_17_19 AM.png
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\icons\logo.png -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\logo.png
+MOVE: C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\icons\qr-homepage.svg -> C:\Users\alexw\OneDrive\Documents\Waights garden care\assets\img\qr-homepage.svg
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\z_trash\index.backup.20251102-131801.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\z_trash\index.backup.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\404.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\about.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\contact.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\favicons-head-snippet.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\index.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\policies.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\pricing.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\privacy.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\refunds.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\send-enquiry.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\services.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\terms.html
+REWRITE PATHS in: C:\Users\alexw\OneDrive\Documents\Waights garden care\thank-you.html

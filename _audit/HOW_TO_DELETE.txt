@@ -1,0 +1,18 @@
+﻿# To delete curated items:
+# 1) Edit _audit\delete_list.txt and put relative paths to remove, e.g.:
+#    assets/img/old-logo.png
+#    index (1).html
+# 2) Run:
+
+$list = Get-Content .\_audit\delete_list.txt | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+foreach ($p in $list) {
+  $full = Join-Path (Get-Location).Path $p
+  if (Test-Path $full -and $full.StartsWith((Get-Location).Path)) {
+    Remove-Item $full -Force -Recurse
+    Write-Host "Deleted: $p"
+  } else {
+    Write-Warning "Skip (not found or outside project): $p"
+  }
+}
+# Then commit:
+#   git add -A; git commit -m "Remove duplicates/unused files"; git push
