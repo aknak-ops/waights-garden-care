@@ -103,6 +103,7 @@
     .checkbox-group a {
       color: var(--brand);
       text-decoration: none;
+      cursor: pointer;
     }
 
     .checkbox-group a:hover {
@@ -203,9 +204,140 @@
       font-weight: 500;
     }
 
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    .modal-dialog {
+      position: relative;
+      width: 90%;
+      max-width: 700px;
+      max-height: 80vh;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .modal-close:hover {
+      background: var(--beige);
+    }
+
+    .modal-body {
+      overflow-y: auto;
+      padding: 1.5rem;
+      flex: 1;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .modal-body h3 {
+      margin: 1.5rem 0 0.75rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .modal-body p {
+      margin: 0 0 1rem;
+      color: var(--text);
+    }
+
+    .modal-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .modal-footer button {
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .modal-footer .btn-back {
+      background: var(--beige);
+      color: var(--text);
+    }
+
+    .modal-footer .btn-back:hover {
+      background: #e5dfd6;
+    }
+
     @media (max-width: 480px) {
       .availability-schedule {
         grid-template-columns: 1fr;
+      }
+
+      .modal-dialog {
+        width: 95%;
+        max-height: 90vh;
+      }
+
+      .modal-header {
+        padding: 1rem;
+      }
+
+      .modal-body {
+        padding: 1rem;
+      }
+
+      .modal-footer {
+        padding: 1rem;
       }
     }
   </style>
