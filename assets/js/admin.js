@@ -1,21 +1,21 @@
 (function(){
   const $ = s=>document.querySelector(s);
-  const $proj\admin.html = s=>[...document.querySelectorAll(s)];
+  const $$ = s=>[...document.querySelectorAll(s)];
   const LS_KEY = 'wgc_jobs_v1';
 
-  const form = #jobForm;
-  const tableBody = #jobsTable tbody;
-  const search = #search;
-  const filterPaid = #filterPaid;
-  const filterBundle = #filterBundle;
-  const resetBtn = #resetBtn;
+  const form = $('#jobForm');
+  const tableBody = $('#jobsTable tbody');
+  const search = $('#search');
+  const filterPaid = $('#filterPaid');
+  const filterBundle = $('#filterBundle');
+  const resetBtn = $('#resetBtn');
 
-  const summaryCount = #summaryCount;
-  const summaryPaid = #summaryPaid;
-  const summaryUnpaid = #summaryUnpaid;
+  const summaryCount = $('#summaryCount');
+  const summaryPaid = $('#summaryPaid');
+  const summaryUnpaid = $('#summaryUnpaid');
 
-  const exportBtn = #exportCsv;
-  const wipeAll = #wipeAll;
+  const exportBtn = $('#exportCsv');
+  const wipeAll = $('#wipeAll');
 
   function priceFor(bundle){
     if(bundle==='Quick Refresh') return 25;
@@ -30,30 +30,30 @@
 
   function readForm(){
     return {
-      id: #jobId.value || uid(),
-      name: #name.value.trim(),
-      address: #address.value.trim(),
-      date: #date.value,
-      bundle: #bundle.value,
-      amount: priceFor(#bundle.value),
-      payMethod: #payMethod.value,
-      paid: #paid.value,
-      notes: #notes.value.trim(),
+      id: $('#jobId').value || uid(),
+      name: $('#name').value.trim(),
+      address: $('#address').value.trim(),
+      date: $('#date').value,
+      bundle: $('#bundle').value,
+      amount: priceFor($('#bundle').value),
+      payMethod: $('#payMethod').value,
+      paid: $('#paid').value,
+      notes: $('#notes').value.trim(),
     };
   }
 
   function fillForm(j){
-    #jobId.value = j.id;
-    #name.value = j.name;
-    #address.value = j.address;
-    #date.value = j.date;
-    #bundle.value = j.bundle;
-    #payMethod.value = j.payMethod;
-    #paid.value = j.paid;
-    #notes.value = j.notes || '';
+    $('#jobId').value = j.id;
+    $('#name').value = j.name;
+    $('#address').value = j.address;
+    $('#date').value = j.date;
+    $('#bundle').value = j.bundle;
+    $('#payMethod').value = j.payMethod;
+    $('#paid').value = j.paid;
+    $('#notes').value = j.notes || '';
   }
 
-  function clearForm(){ form.reset(); #jobId.value=''; }
+  function clearForm(){ form.reset(); $('#jobId').value=''; }
 
   function render(){
     const q = search.value.toLowerCase();
@@ -69,29 +69,28 @@
     }).sort((a,b)=> (a.date||'').localeCompare(b.date));
 
     tableBody.innerHTML = filtered.map(j=>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>£</td>
-        <td></td>
-        <td class="\">\</td>
+      `<tr>
+        <td>${j.date}</td>
+        <td>${j.name}</td>
+        <td>${j.address}</td>
+        <td>${j.bundle}</td>
+        <td>£${j.amount}</td>
+        <td>${j.payMethod}</td>
+        <td class="${j.paid==='Yes'?'paid':'unpaid'}">${j.paid}</td>
         <td class="actions">
-          <button class="btn" data-edit="\">Edit</button>
-          <button class="btn outline" data-toggle="\">\</button>
-          <button class="btn danger" data-del="\">Delete</button>
+          <button class="btn" data-edit="${j.id}">Edit</button>
+          <button class="btn outline" data-toggle="${j.id}">${j.paid==='Yes'?'Unpaid':'Paid'}</button>
+          <button class="btn danger" data-del="${j.id}">Delete</button>
         </td>
-      </tr>
+      </tr>`
     ).join('');
 
-    // summaries
     const total = filtered.length;
     const paidSum = filtered.filter(j=>j.paid==='Yes').reduce((s,j)=>s+(j.amount||0),0);
     const unpaidSum = filtered.filter(j=>j.paid!=='Yes').reduce((s,j)=>s+(j.amount||0),0);
-    summaryCount.textContent = ${total} job;
-    summaryPaid.textContent = £ paid;
-    summaryUnpaid.textContent = £ unpaid;
+    summaryCount.textContent = `${total} job${total!==1?'s':''}`;
+    summaryPaid.textContent = `£${paidSum} paid`;
+    summaryUnpaid.textContent = `£${unpaidSum} unpaid`;
   }
 
   form.addEventListener('submit', e=>{
@@ -134,7 +133,7 @@
     const list = load();
     const rows = [
       ['Date','Name','Address','Bundle','Amount','PayMethod','Paid','Notes'],
-      ...list.map(j=>[j.date,j.name,j.address,j.bundle,j.amount,j.payMethod,j.paid,j.notes?.replace(/\\n/g,' ')||''])
+      ...list.map(j=>[j.date,j.name,j.address,j.bundle,j.amount,j.payMethod,j.paid,j.notes?.replace(/\n/g,' ')||''])
     ];
     const csv = rows.map(r=>r.map(x=>{
       const s = (x==null?'':String(x));
@@ -154,12 +153,10 @@
     }
   });
 
-  // seed example if empty
   if(load().length===0){
     save([
-      {id:uid(), name:'Jane Doe', address:'St Dunstan’s, CT2', date:new Date().toISOString().slice(0,10), bundle:'Quick Refresh', amount:25, payMethod:'Bank', paid:'No', notes:'Front garden only'},
+      {id:uid(), name:'Jane Doe', address:'St Dunstan\'s, CT2', date:new Date().toISOString().slice(0,10), bundle:'Quick Refresh', amount:25, payMethod:'Bank', paid:'No', notes:'Front garden only'},
     ]);
   }
   render();
 })();
-
