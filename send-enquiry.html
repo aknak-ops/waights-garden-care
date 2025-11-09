@@ -159,6 +159,55 @@
       text-align: center;
       font-weight: 600;
     }
+
+    .availability-box {
+      padding: 1.5rem;
+      background: var(--beige);
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+    .availability-box h3 {
+      margin: 0 0 1rem;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .availability-schedule {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .availability-day {
+      padding: 0.75rem;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .availability-day-name {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .availability-day-time {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .availability-day.unavailable .availability-day-time {
+      color: #dc2626;
+      font-weight: 500;
+    }
+
+    @media (max-width: 480px) {
+      .availability-schedule {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -190,6 +239,40 @@
 
     <section class="section">
       <div class="container form-wrapper">
+        <div class="availability-box">
+          <h3>When I'm available</h3>
+          <div class="availability-schedule">
+            <div class="availability-day">
+              <div class="availability-day-name">Monday</div>
+              <div class="availability-day-time">8am – 1pm</div>
+            </div>
+            <div class="availability-day unavailable">
+              <div class="availability-day-name">Tuesday</div>
+              <div class="availability-day-time">Unavailable</div>
+            </div>
+            <div class="availability-day">
+              <div class="availability-day-name">Wednesday</div>
+              <div class="availability-day-time">8am – 10am</div>
+            </div>
+            <div class="availability-day">
+              <div class="availability-day-name">Thursday</div>
+              <div class="availability-day-time">8am – 1pm</div>
+            </div>
+            <div class="availability-day">
+              <div class="availability-day-name">Friday</div>
+              <div class="availability-day-time">8am – 10am</div>
+            </div>
+            <div class="availability-day">
+              <div class="availability-day-name">Saturday</div>
+              <div class="availability-day-time">9am – 1pm</div>
+            </div>
+            <div class="availability-day">
+              <div class="availability-day-name">Sunday</div>
+              <div class="availability-day-time">9am – 1pm</div>
+            </div>
+          </div>
+        </div>
+
         <form class="form" id="enq" action="https://formsubmit.co/waightsgardencare@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="New enquiry — Waights Garden Care" />
           <input type="hidden" name="_template" value="table" />
@@ -221,20 +304,25 @@
             <label for="service">Service *</label>
             <select id="service" required name="service">
               <option value="">Select a service</option>
-              <option>Garden Tidy &amp; Clear (£35)</option>
-              <option>Season Refresh (£50)</option>
-              <option>Add lawn mowing (+£8–£12)</option>
+              <optgroup label="Without lawn mowing">
+                <option>Garden Tidy &amp; Clear (£35)</option>
+                <option>Season Refresh (£50)</option>
+              </optgroup>
+              <optgroup label="With lawn mowing add-on">
+                <option>Garden Tidy &amp; Clear + Lawn Mowing (£43–£47)</option>
+                <option>Season Refresh + Lawn Mowing (£58–£62)</option>
+              </optgroup>
             </select>
           </div>
 
           <div class="form-group">
             <label for="slot">Preferred date/time</label>
-            <input id="slot" type="text" name="slot" placeholder="e.g., Tue morning" />
+            <input id="slot" type="text" name="slot" placeholder="e.g., Mon 9am" />
           </div>
 
           <div class="form-group">
-            <label for="message">Message / details *</label>
-            <textarea id="message" required name="message" placeholder="Tell me what you need"></textarea>
+            <label for="message">Message / details</label>
+            <textarea id="message" name="message" placeholder="Tell me what you need (optional)"></textarea>
           </div>
 
           <div class="checkbox-group">
