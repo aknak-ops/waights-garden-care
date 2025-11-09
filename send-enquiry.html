@@ -1,0 +1,73 @@
+﻿<!doctype html><html lang='en'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Waights Garden Care | Send enquiry</title>
+<link rel='stylesheet' href='./assets/css/style.css'>
+</head><body>
+<header>
+  <div class='container nav'>
+    <div class='logo-wrap'>
+      <img src='./assets/img/logo.png' alt='Waights Garden Care' class='logo'>
+      <strong>Waights Garden Care</strong>
+    </div>
+    <nav>
+      <a href='./index.html'>Home</a>
+      <a href='./pricing.html'>Pricing</a>
+      <a href='./about.html'>About</a>
+      <a href='./send-enquiry.html'>Send enquiry</a>
+    </nav>
+  </div>
+</header>
+
+<div class='container section'>
+  <h1>Send enquiry</h1>
+  <p>Open MonSat (Canterbury & nearby). Ill reply to confirm a time and a short arrival window.</p>
+
+  <form class='form' id='enq'>
+    <label>Full name *</label><input required name='name' placeholder='Your name'>
+    <label>Email *</label><input required type='email' name='email' placeholder='you@example.com'>
+    <label>Phone</label><input name='phone' placeholder='07353 738 448'>
+    <label>Postcode *</label><input required name='postcode' placeholder='CT1 1AA'>
+    <label>Service *</label>
+    <select required name='service'>
+      <option value=''>Select</option>
+      <option>Garden Tidy & Clear (£35)</option>
+      <option>Season Refresh (£50)</option>
+      <option>Add lawn mowing (+£8£12)</option>
+    </select>
+    <label>Preferred date/time</label><input name='slot' placeholder='e.g., Tue morning'>
+    <label>Message / details *</label><textarea required name='message' rows='5' placeholder='Tell me what you need'></textarea>
+
+    <div class='checkbox'>
+      <input type='checkbox' id='tc' required>
+      <label for='tc'>I have read and agree to the <a href='./terms.html'>Terms of Service</a> and <a href='./privacy.html'>Privacy Policy</a>.</label>
+    </div>
+
+    <div style='margin-top:12px;display:flex;gap:10px;align-items:center'>
+      <button class='cta' id='send' type='submit' disabled>Send enquiry</button>
+      <small>If your mail app doesnt open, email <strong>WaightsGardenCare</strong> or call <strong>07353 738 448</strong>.</small>
+    </div>
+
+    <div id='ok' class='notice' style='display:none'>Thanks! Ill get back to you soon.</div>
+  </form>
+</div>
+
+<footer class='footer'>
+  <div class='container'>
+    <p><strong> 2025 Waights Garden Care.</strong> Based in Canterbury, Kent | 07353 738 448 | WaightsGardenCare</p>
+    <p>All services follow my <a href='./terms.html'>Terms of Service</a> and <a href='./privacy.html'>Privacy Policy</a>.</p>
+    <p><em>Fully insured  DBS checked  Independent local service</em></p>
+  </div>
+</footer>
+
+<script>
+  const tc=document.getElementById('tc'), btn=document.getElementById('send');
+  tc.addEventListener('change',()=>btn.disabled=!tc.checked);
+  document.getElementById('enq').addEventListener('submit',e=>{
+    e.preventDefault();
+    const f=new FormData(e.target);
+    const body=[...f.entries()].map(([k,v])=>k.toUpperCase()+': '+v).join('%0D%0A');
+    location.href = 'mailto:WaightsGardenCare?subject=New enquiry  Waights Garden Care&body='+body;
+    document.getElementById('ok').style.display='block';
+  });
+</script>
+</body></html>
