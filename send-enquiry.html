@@ -22,7 +22,12 @@
   <h1>Send enquiry</h1>
   <p>Open MonSat (Canterbury & nearby). Ill reply to confirm a time and a short arrival window.</p>
 
-  <form class='form' id='enq'>
+  <form class='form' id='enq' action='https://formsubmit.co/waightsgardencare@gmail.com' method='POST'>
+  <input type='hidden' name='_subject' value='New enquiry — Waights Garden Care'>
+  <input type='hidden' name='_template' value='table'>
+  <input type='hidden' name='_captcha' value='false'>
+  <input type='text' name='_honey' style='display:none'>
+  <input type='hidden' name='_next' value='./thank-you.html'>
     <label>Full name *</label><input required name='name' placeholder='Your name'>
     <label>Email *</label><input required type='email' name='email' placeholder='you@example.com'>
     <label>Phone</label><input name='phone' placeholder='07353 738 448'>
@@ -63,16 +68,17 @@
   </div>
 </footer>
 
+
 <script>
-  const tc=document.getElementById('tc'), btn=document.getElementById('send');
-  tc.addEventListener('change',()=>btn.disabled=!tc.checked);
-  document.getElementById('enq').addEventListener('submit',e=>{
-    e.preventDefault();
-    const f=new FormData(e.target);
-    const body=[...f.entries()].map(([k,v])=>k.toUpperCase()+': '+v).join('%0D%0A');
-    location.href = 'mailto:WaightsGardenCare?subject=New enquiry  Waights Garden Care&body='+body;
-    document.getElementById('ok').style.display='block';
-  });
+(function(){
+  const tc = document.getElementById('tc');
+  const btn = document.getElementById('send');
+  if (tc && btn) {
+    const sync = ()=> btn.disabled = !tc.checked;
+    tc.addEventListener('change', sync); sync();
+  }
+})();
 </script>
 </body></html>
+
 
