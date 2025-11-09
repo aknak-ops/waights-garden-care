@@ -1,81 +1,280 @@
-<!doctype html><html lang='en'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>Waights Garden Care | Send enquiry</title>
-<link rel='stylesheet' href='./assets/css/style.css'>
-</head><body>
-<header>
-  <div class='container nav'>
-    <div class='logo-wrap'>
-      <img src='./assets/img/logo.png' alt='Waights Garden Care' class='logo' style='height:96px;width:auto;'>
-      <strong>Waights Garden Care</strong>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Send enquiry – Waights Garden Care</title>
+  <meta name="description" content="Send an enquiry to Waights Garden Care for a free quote. Open Mon–Sat." />
+  <meta property="og:title" content="Waights Garden Care" />
+  <meta property="og:description" content="Fixed-price garden care in Canterbury. Garden Tidy & Clear (£35), Season Refresh (£50). Optional mowing add-on." />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="canonical" href="https://aknak-ops.github.io/waights-garden-care/send-enquiry.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Waights Garden Care",
+  "image": "https://aknak-ops.github.io/waights-garden-care/assets/img/logo.png",
+  "url": "https://aknak-ops.github.io/waights-garden-care/index.html",
+  "telephone": "+44 77 0000 0000",
+  "priceRange": "££",
+  "areaServed": "Canterbury and nearby",
+  "email": "hello@waightsgardencare.co.uk",
+  "description": "Fixed-price garden care in Canterbury: Garden Tidy & Clear (£35) and Season Refresh (£50) with optional mowing add-on.",
+  "sameAs": ["https://wa.me/447700000000"]
+}
+  </script>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+  <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/site.js"></script>
+  <style>
+    .form-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form label {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .form input,
+    .form select,
+    .form textarea {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text);
+      background: var(--bg);
+      transition: border-color 0.2s ease;
+    }
+
+    .form input:focus,
+    .form select:focus,
+    .form textarea:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(47, 108, 58, 0.1);
+    }
+
+    .form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      margin-top: 0.3rem;
+      cursor: pointer;
+      width: 18px;
+      height: 18px;
+    }
+
+    .checkbox-group label {
+      margin: 0;
+      font-weight: normal;
+      cursor: pointer;
+      line-height: 1.5;
+    }
+
+    .checkbox-group a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .checkbox-group a:hover {
+      text-decoration: underline;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .form-actions .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .form-helper {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .form-notice {
+      padding: 1rem;
+      background: var(--beige);
+      border-radius: 10px;
+      font-size: 14px;
+      color: var(--text);
+      margin-top: 1.5rem;
+    }
+
+    .form-notice strong {
+      color: var(--brand);
+    }
+
+    .form-notice a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .form-notice a:hover {
+      text-decoration: underline;
+    }
+
+    .success-message {
+      padding: 1.25rem;
+      background: #dbeae1;
+      border: 1px solid var(--brand);
+      border-radius: 10px;
+      color: var(--brand-ink);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Waights Garden Care logo" style="height:96px;width:auto;vertical-align:middle;" />
+        <span class="brand-text" style="position:absolute;left:-9999px;">Waights Garden Care</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a aria-current="page" href="send-enquiry.html">Send enquiry</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <a href='./index.html'>Home</a>
-      <a href='./about.html'>About</a>
-      <a href='./send-enquiry.html'>Send enquiry</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<div class='container section'>
-  <h1>Send enquiry</h1>
-  <p>Open MonSat (Canterbury & nearby). Ill reply to confirm a time and a short arrival window.</p>
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <h1>Send enquiry</h1>
+        <p class="lead">Open Mon–Sat (Canterbury &amp; nearby). I'll reply to confirm a time and a short arrival window.</p>
+      </div>
+    </section>
 
-  <form class='form' id='enq' action='https://formsubmit.co/waightsgardencare@gmail.com' method='POST'>
-  <input type='hidden' name='_subject' value='New enquiry — Waights Garden Care'>
-  <input type='hidden' name='_template' value='table'>
-  <input type='hidden' name='_captcha' value='false'>
-  <input type='text' name='_honey' style='display:none'>
-  <input type='hidden' name='_next' value='./thank-you.html'>
-    <label>Full name *</label><input required name='name' placeholder='Your name'>
-    <label>Email *</label><input required type='email' name='email' placeholder='you@example.com'>
-    <label>Phone</label><input name='phone' placeholder='07353 738 448'>
-    <label>Postcode *</label><input required name='postcode' placeholder='CT1 1AA'>
-    <label>Service *</label>
-    <select required name='service'>
-      <option value=''>Select</option>
-      <option>Garden Tidy & Clear (£35)</option>
-      <option>Season Refresh (£50)</option>
-      <option>Add lawn mowing (+£8£12)</option>
-    </select>
-    <label>Preferred date/time</label><input name='slot' placeholder='e.g., Tue morning'>
-    <label>Message / details *</label><textarea required name='message' rows='5' placeholder='Tell me what you need'></textarea>
+    <section class="section">
+      <div class="container form-wrapper">
+        <form class="form" id="enq" action="https://formsubmit.co/waightsgardencare@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry — Waights Garden Care" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none;" />
+          <input type="hidden" name="_next" value="./thank-you.html" />
 
-    <div class='checkbox'>
-      <input type='checkbox' id='tc' required>
-      <label for='tc'>I have read and agree to the <a href='./terms.html'>Terms of Service</a> and <a href='./privacy.html'>Privacy Policy</a>.</label>
+          <div class="form-group">
+            <label for="name">Full name *</label>
+            <input id="name" type="text" required name="name" placeholder="Your name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input id="email" type="email" required name="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" name="phone" placeholder="07353 738 448" />
+          </div>
+
+          <div class="form-group">
+            <label for="postcode">Postcode *</label>
+            <input id="postcode" type="text" required name="postcode" placeholder="CT1 1AA" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service *</label>
+            <select id="service" required name="service">
+              <option value="">Select a service</option>
+              <option>Garden Tidy &amp; Clear (£35)</option>
+              <option>Season Refresh (£50)</option>
+              <option>Add lawn mowing (+£8–£12)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="slot">Preferred date/time</label>
+            <input id="slot" type="text" name="slot" placeholder="e.g., Tue morning" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / details *</label>
+            <textarea id="message" required name="message" placeholder="Tell me what you need"></textarea>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="tc" required />
+            <label for="tc">I have read and agree to the <a href="./terms.html">Terms of Service</a> and <a href="./privacy.html">Privacy Policy</a>.</label>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" id="send" type="submit" disabled>Send enquiry</button>
+            <p class="form-helper">If your email client doesn't open, email <strong>WaightsGardenCare</strong> or call <strong>07353 738 448</strong>.</p>
+          </div>
+
+          <div id="ok" class="success-message" style="display:none;">Thanks! I'll get back to you soon.</div>
+
+          <div class="form-notice">
+            <strong>Cancellations under 12 hours notice</strong> incur an <strong>£8 fee</strong>. See the <a href="./refunds.html">Refund &amp; Cancellation Policy</a> for details.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal">
+      <p>© 2025 Waights Garden Care. Based in Canterbury, Kent | 07353 738 448 | WaightsGardenCare</p>
+      <p>All services follow my <a href="./terms.html">Terms of Service</a> and <a href="./privacy.html">Privacy Policy</a>.</p>
+      <p><em>Fully insured · DBS checked · Independent local service</em></p>
     </div>
+  </footer>
 
-    <div style='margin-top:12px;display:flex;gap:10px;align-items:center'>
-      <button class='cta' id='send' type='submit' disabled>Send enquiry</button>
-      <small>If your mail app doesnt open, email <strong>WaightsGardenCare</strong> or call <strong>07353 738 448</strong>.</small>
-    </div>
-
-    <div id='ok' class='notice' style='display:none'>Thanks! Ill get back to you soon.</div>
-      <div class='notice' id='cancel-note' style='margin-top:12px'>
-      Cancellations under 12 hours notice incur an <strong>£8 fee</strong>. 
-      See the <a href='./refunds.html'>Refund & Cancellation Policy</a> for details.
-    </div>
-</form>
-</div>
-
-<footer class='footer'>
-  <div class='container'>
-    <p><strong> 2025 Waights Garden Care.</strong> Based in Canterbury, Kent | 07353 738 448 | WaightsGardenCare</p>
-    <p>All services follow my <a href='./terms.html'>Terms of Service</a> and <a href='./privacy.html'>Privacy Policy</a>.</p>
-    <p><em>Fully insured  DBS checked  Independent local service</em></p>
-  </div>
-</footer>
-
-
-<script>
-(function(){
-  const tc = document.getElementById('tc');
-  const btn = document.getElementById('send');
-  if (tc && btn) {
-    const sync = ()=> btn.disabled = !tc.checked;
-    tc.addEventListener('change', sync); sync();
-  }
-})();
-</script>
-</body></html>
+  <script>
+    (function() {
+      const tc = document.getElementById('tc');
+      const btn = document.getElementById('send');
+      if (tc && btn) {
+        const sync = () => (btn.disabled = !tc.checked);
+        tc.addEventListener('change', sync);
+        sync();
+      }
+    })();
+  </script>
+</body>
+</html>
