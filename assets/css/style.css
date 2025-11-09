@@ -1,0 +1,51 @@
+﻿
+:root{
+  --header-h: 96px;         /* desktop header height */
+  --header-h-sm: 72px;      /* mobile header height */
+  --header-pad: 8px;        /* inner breathing room */
+}
+
+/* Header frame */
+header{
+  background:#fff;
+  border-bottom:1px solid #e9e6e1;
+  height: var(--header-h);
+  overflow:hidden;
+}
+
+/* Keep the main bar aligned; container already exists */
+header .container.nav{
+  height:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+}
+
+/* Logo block pinned to top-left, fills header nearly fully */
+.logo-wrap{
+  height:100%;
+  display:flex;
+  align-items:flex-start;    /* anchor to top */
+  justify-content:flex-start;/* anchor to left */
+  padding: var(--header-pad);
+  gap:12px;
+}
+
+/* Logo scales to header height minus padding; keeps square aspect */
+.logo{
+  display:block;
+  height: calc(100% - (var(--header-pad) * 2));
+  width: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+/* Responsive: slightly shorter header on small screens */
+@media (max-width: 480px){
+  header{ height: var(--header-h-sm); }
+}
+
+
+nav a{display:inline-block; padding-top:2px; padding-bottom:2px}
+
