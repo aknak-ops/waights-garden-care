@@ -435,17 +435,5 @@
       <p><em>Fully insured · DBS checked · Independent local service</em></p>
     </div>
   </footer>
-
-  <script>
-    (function() {
-      const tc = document.getElementById('tc');
-      const btn = document.getElementById('send');
-      if (tc && btn) {
-        const sync = () => (btn.disabled = !tc.checked);
-        tc.addEventListener('change', sync);
-        sync();
-      }
-    })();
-  </script>
 </body>
 </html>
