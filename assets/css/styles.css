@@ -133,7 +133,7 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 /* ========== Utilities ========== */
 .center-text{ text-align:center; }
 .note-offset{ margin-top:-.4rem; }
-.badge{ display:inline-block; padding:.25rem .5rem; border-radius:8px; background:#e9f6ec; color:var(--brand); font-weight:700; }
+.badge{ display:inline-block; padding:.3rem .6rem; border-radius:6px; background:var(--bg-alt); color:var(--accent); font-weight:600; font-size: 13px; }
 
 /* ========== Forms (links only now) ========== */
 a[href^="mailto:"], a[href^="https://wa.me"]{ word-break:break-word; }
