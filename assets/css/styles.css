@@ -144,6 +144,13 @@ a[href^="mailto:"], a[href^="https://wa.me"]{ word-break:break-word; }
 /* ========== Responsive tweaks ========== */
 @media (max-width: 860px){
   .hero .hero-grid{ grid-template-columns: 1fr; }
+  .hero-actions{ flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn{ width: 100%; text-align: center; }
   .footer-grid{ grid-template-columns: 1fr; }
   .site-nav{ display:flex; gap:.25rem; flex-wrap:wrap; }
+}
+
+@media (max-width: 640px){
+  .hero h1{ font-size: 28px; }
+  .hero-subtitle{ font-size: 18px; }
 }
