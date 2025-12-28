@@ -79,16 +79,18 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 
 /* ========== Hero ========== */
 .hero{
-  background: linear-gradient(180deg, #84d18a 0%, #6fbf78 60%, #66b672 100%);
-  color:#fff; padding: clamp(2rem, 5vw, 4rem) 0;
+  background: var(--bg-alt);
+  color:var(--text); padding: clamp(2.5rem, 6vw, 4.5rem) 0;
+  border-bottom: 1px solid var(--border-light);
 }
 .hero .hero-grid{
-  display:grid; grid-template-columns: 1.15fr .85fr; gap: clamp(1rem, 3vw, 2rem);
+  display:grid; grid-template-columns: 1fr; gap: clamp(1rem, 3vw, 2rem);
   align-items:center;
 }
-.hero .lead{ color:#ecfdf5; font-size:clamp(16px, 2.2vw, 18px); }
+.hero h1{ margin-bottom: 1rem; }
+.hero .lead{ color:var(--muted); font-size:clamp(16px, 2vw, 18px); font-weight: 500; line-height: 1.7; }
 .hero .trust-badges{ margin:.75rem 0 0; padding:0 0 0 1rem; }
-.hero .trust-badges li{ color:#e6ffef; }
+.hero .trust-badges li{ color:var(--muted); }
 
 /* ========== Sections ========== */
 .section{ padding: clamp(1.8rem, 4vw, 3rem) 0; }
