@@ -52,11 +52,11 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 }
 .header-bar{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.9rem 0; }
 .brand{ display:inline-flex; align-items:center; gap:.6rem; text-decoration:none; }
-.brand-text{ font-weight:800; color:#0b1f12; letter-spacing:.2px; }
+.brand-text{ font-weight:700; color:var(--text-dark); letter-spacing:.3px; }
 .site-nav a{
-  color:#0f172a; text-decoration:none; padding:.5rem .6rem; border-radius:10px;
+  color:var(--text); text-decoration:none; padding:.5rem .6rem; border-radius:8px; font-weight:500;
 }
-.site-nav a:hover{ background:#f4f6f5; }
+.site-nav a:hover{ background:var(--bg-alt); color:var(--text-dark); }
 
 /* ========== Buttons ========== */
 .btn-row{ display:flex; gap:.75rem; flex-wrap:wrap; }
