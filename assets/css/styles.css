@@ -140,6 +140,14 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 .footer-links a:hover{ text-decoration:underline; }
 .container.legal{ margin-top:1.5rem; border-top:1px solid rgba(255,255,255,.1); padding-top: 1rem; color:#9ca3af; font-size: 14px; line-height: 1.6; }
 
+/* ========== Contact Section ========== */
+.phone-contact{ max-width: 600px; margin: 0 auto; }
+.phone-contact h2{ text-align: center; margin-bottom: 2rem; }
+.phone-display{ display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+.btn-large{ padding: 1rem 2rem; font-size: 18px; font-weight: 700; }
+.contact-note{ text-align: center; color: var(--muted); font-size: 16px; line-height: 1.6; margin-bottom: 2rem; }
+.phone-contact .form-notice{ margin-top: 2rem; }
+
 /* ========== Utilities ========== */
 .center-text{ text-align:center; }
 .note-offset{ margin-top:-.4rem; }
