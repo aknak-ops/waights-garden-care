@@ -125,7 +125,8 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 
 /* lists */
 .list-bullets{ padding-left:1.2rem; }
-.list-bullets li{ margin:.35rem 0; }
+.list-bullets li{ margin:.35rem 0; color: var(--text); }
+.service-card .list-bullets{ margin: 1rem 0; }
 
 /* ========== Footer ========== */
 .site-footer{ background: #2d3748; color:#e2e8f0; padding: 2.5rem 0 2.5rem; }
