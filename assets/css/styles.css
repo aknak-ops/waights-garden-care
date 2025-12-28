@@ -156,6 +156,16 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 /* ========== Forms (links only now) ========== */
 a[href^="mailto:"], a[href^="https://wa.me"]{ word-break:break-word; }
 
+/* ========== Text & Policy Pages ========== */
+.text-page{ padding: clamp(2.5rem, 5vw, 3.5rem) 0; }
+.text-page h3{ margin-top: 1.5rem; margin-bottom: 0.75rem; }
+.text-page ul{ padding-left: 1.2rem; margin: 1rem 0; }
+.text-page li{ margin: 0.5rem 0; color: var(--text); }
+.narrow{ max-width: 700px; margin: 0 auto; }
+.page-hero{ background: var(--bg-alt); padding: clamp(2.5rem, 6vw, 4.5rem) 0; border-bottom: 1px solid var(--border-light); }
+.page-hero h1{ font-size: clamp(28px, 4vw, 40px); margin-bottom: 0.75rem; }
+.page-hero .lead{ font-size: clamp(16px, 2vw, 18px); color: var(--muted); font-weight: 500; line-height: 1.7; }
+
 /* ========== Responsive tweaks ========== */
 @media (max-width: 860px){
   .hero .hero-grid{ grid-template-columns: 1fr; }
