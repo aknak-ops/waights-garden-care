@@ -161,6 +161,8 @@ a[href^="mailto:"], a[href^="https://wa.me"]{ word-break:break-word; }
   .hero .hero-grid{ grid-template-columns: 1fr; }
   .hero-actions{ flex-direction: column; align-items: flex-start; }
   .hero-actions .btn{ width: 100%; text-align: center; }
+  .phone-display{ flex-direction: column; }
+  .phone-display .btn{ width: 100%; }
   .footer-grid{ grid-template-columns: 1fr; }
   .site-nav{ display:flex; gap:.25rem; flex-wrap:wrap; }
 }
@@ -168,4 +170,5 @@ a[href^="mailto:"], a[href^="https://wa.me"]{ word-break:break-word; }
 @media (max-width: 640px){
   .hero h1{ font-size: 28px; }
   .hero-subtitle{ font-size: 18px; }
+  .btn-large{ padding: 0.85rem 1.5rem; font-size: 16px; }
 }
