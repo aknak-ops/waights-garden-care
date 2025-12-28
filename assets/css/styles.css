@@ -61,18 +61,20 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 /* ========== Buttons ========== */
 .btn-row{ display:flex; gap:.75rem; flex-wrap:wrap; }
 .btn{
-  --btn-bg: var(--brand);
+  --btn-bg: var(--accent);
   --btn-ink:#fff;
-  display:inline-block; padding:.72rem 1rem; border-radius:12px;
+  display:inline-block; padding:.72rem 1rem; border-radius:10px;
   background:var(--btn-bg); color:var(--btn-ink);
-  text-decoration:none; font-weight:700; box-shadow: var(--shadow);
-  border:1px solid transparent; transition: transform .08s ease, background .2s ease;
+  text-decoration:none; font-weight:600; box-shadow: none;
+  border:1px solid transparent; transition: all .2s ease;
 }
-.btn:hover{ transform: translateY(-1px); }
+.btn:hover{ background:var(--accent-hover); transform: translateY(0); }
+.btn.primary{ --btn-bg: var(--accent); --btn-ink: #fff; }
 .btn-outline{
-  --btn-bg: #fff; --btn-ink: var(--brand);
-  border-color: var(--brand); box-shadow:none;
+  --btn-bg: transparent; --btn-ink: var(--accent);
+  border-color: var(--accent); box-shadow:none;
 }
+.btn-outline:hover{ --btn-bg: var(--bg-alt); }
 .btn-sm{ padding:.55rem .75rem; font-weight:600; }
 
 /* ========== Hero ========== */
