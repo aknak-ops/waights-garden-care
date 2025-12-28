@@ -135,13 +135,14 @@ p{ margin:.3rem 0 1rem; color: var(--text); }
 
 /* ========== Footer ========== */
 .site-footer{ background: #2d3748; color:#ffffff; padding: 2.5rem 0 2.5rem; }
-.site-footer a{ color: #ffffff; text-decoration: none; font-weight: 600; }
-.site-footer a:hover{ text-decoration: underline; color: #f0f0f0; }
+.site-footer a{ color: #ffffff; text-decoration: none; font-weight: 700; }
+.site-footer a:hover{ text-decoration: underline; color: #ffffff; }
 .footer-grid{ display:grid; gap:1.5rem; grid-template-columns: 1.2fr 1fr 1fr; align-items:start; }
-.footer-links a{ color:#ffffff; text-decoration:none; font-weight: 600; }
-.footer-links a:hover{ text-decoration:underline; color: #f0f0f0; }
-.container.legal{ margin-top:1.5rem; border-top:1px solid rgba(255,255,255,.2); padding-top: 1.5rem; color:#ffffff; font-size: 16px; line-height: 1.9; font-weight: 500; }
-.container.legal p{ margin: 0.85rem 0; }
+.footer-links a{ color:#ffffff; text-decoration:none; font-weight: 700; }
+.footer-links a:hover{ text-decoration:underline; color: #ffffff; }
+.container.legal{ margin-top:1.5rem; border-top:1px solid rgba(255,255,255,.25); padding-top: 1.5rem; color:#ffffff; font-size: 17px; line-height: 2; font-weight: 600; }
+.container.legal p{ margin: 0.9rem 0; }
+.container.legal em{ font-style: italic; color: #ffffff; font-weight: 600; }
 
 /* ========== Forms ========== */
 .enquiry-form{ max-width: 600px; margin: 0 auto 3rem; }
